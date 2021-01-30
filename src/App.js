@@ -4,6 +4,8 @@ import {Button} from "react-bootstrap"
 import { Entry } from './Pages/entry/entry.js';
 import { Defaultlayout } from './Layout/Defaultlayout';
 import Dashboard from './Pages/dashboard/Dashboard';
+import { Addticket } from './Pages/Addticket';
+
 
 
 
@@ -12,7 +14,8 @@ function App() {
     <div className="App">
      {/* <Entry /> */}
      <Defaultlayout>
-       <Dashboard />
+       {/* <Dashboard /> */}
+       <Addticket />
     </Defaultlayout>
     </div>
   );
