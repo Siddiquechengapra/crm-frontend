@@ -11,8 +11,8 @@ export const Defaultlayout = ({children}) => {
         <div className="default-layout"> 
         <div className="header">
         <Header />
-        </div>
-        <div className="main">
+        </div> 
+        <div className="main mt-4">
         {children}
          </div>
          <div className="footer">
