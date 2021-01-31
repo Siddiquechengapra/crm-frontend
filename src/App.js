@@ -6,6 +6,7 @@ import { Defaultlayout } from './Layout/Defaultlayout';
 import Dashboard from './Pages/dashboard/Dashboard';
 import { Addticket } from './Pages/Addticket';
 import Ticketlist from './Pages/Ticketlist';
+import {Ticket} from './Pages/Ticket';
 
 
 
@@ -18,7 +19,8 @@ function App() {
      <Defaultlayout>
        {/* <Dashboard /> */}
        {/* <Addticket /> */}
-       <Ticketlist />
+       {/* <Ticketlist /> */}
+       <Ticket />
     </Defaultlayout>
     </div>
   );
