@@ -4,6 +4,7 @@ import { PageBreadcrumb } from '../Components/PageBreadcrumb'
 import {SearchForm} from "../Components/SearchForm"
  import {Tickettable} from "../Components/Tickettable"
  import tickets from "../Assets/data/dummy-tickets.json"
+ import { Link } from "react-router-dom";
 
 
 export default function Ticketlist() {
@@ -42,7 +43,7 @@ const displaytickets=tickets.filter((item)=>{
             </Row>
             <Row>
                 <Col>
-                <Button>Add new ticket</Button>
+                <Link to="/addticket" ><Button>Add new ticket</Button></Link>
                 </Col>
                 <Col className="text-right">
                     <SearchForm handlechange={handlechange} searchbarval={searchbarval}  />

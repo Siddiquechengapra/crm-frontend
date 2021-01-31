@@ -27,54 +27,191 @@
       "id": 2,
       "subject": "Issue with Email certificate",
       "status": "Client response pending",
-      "addedAt": "2020-09-23"
+      "addedAt": "2020-09-23",
+      "history": [
+        {
+          "date": "20-10-10",
+          "message": "this is a fake msg 2",
+          "messageBy": "client"
+        },
+        {
+          "date": "20-10-10",
+          "message": "ok",
+          "messageBy": "operator"
+        },
+        {
+          "date": "20-10-10",
+          "message": "will be done",
+          "messageBy": "client"
+        }
+      ]
     },
     {
       "id": 3,
       "subject": "Issue app crashing",
       "status": "Client response pending",
-      "addedAt": "2020-09-23"
+      "addedAt": "2020-09-23",
+      "history": [
+        {
+          "date": "20-10-10",
+          "message": "this is a fake msgadded",
+          "messageBy": "client"
+        },
+        {
+          "date": "20-10-10",
+          "message": "ok",
+          "messageBy": "operator"
+        },
+        {
+          "date": "20-10-10",
+          "message": "will be done",
+          "messageBy": "client"
+        }
+      ]
     },
     {
       "id": 4,
       "subject": "Issue with ssl certificate",
       "status": "Client response pending",
-      "addedAt": "2020-09-23"
+      "addedAt": "2020-09-23",
+      "history": [
+        {
+          "date": "20-10-10",
+          "message": "this is a fake msg3",
+          "messageBy": "client"
+        },
+        {
+          "date": "20-10-10",
+          "message": "ok",
+          "messageBy": "operator"
+        },
+        {
+          "date": "20-10-10",
+          "message": "will be done",
+          "messageBy": "client"
+        }
+      ]
     },
     {
       "id": 5,
       "subject": "Issue with ssl certificate",
       "status": "Client response pending",
-      "addedAt": "2020-09-23"
+      "addedAt": "2020-09-23",
+      "history": [
+        {
+          "date": "20-10-10",
+          "message": "this is a fake msg4",
+          "messageBy": "client"
+        },
+        {
+          "date": "20-10-10",
+          "message": "ok",
+          "messageBy": "operator"
+        },
+        {
+          "date": "20-10-10",
+          "message": "will be done",
+          "messageBy": "client"
+        }
+      ]
     },
     {
       "id": 6,
       "subject": "Issue with ssl certificate",
       "status": "Client response pending",
-      "addedAt": "2020-09-23"
+      "addedAt": "2020-09-23",
+      "history": [
+        {
+          "date": "20-10-10",
+          "message": "this is a fake msg5",
+          "messageBy": "client"
+        },
+        {
+          "date": "20-10-10",
+          "message": "ok",
+          "messageBy": "operator"
+        },
+        {
+          "date": "20-10-10",
+          "message": "will be done",
+          "messageBy": "client"
+        }
+      ]
     },
     {
       "id": 7,
       "subject": "Issue with ssl certificate",
       "status": "Client response pending",
-      "addedAt": "2020-09-23"
+      "addedAt": "2020-09-23",
+      "history": [
+        {
+          "date": "20-10-10",
+          "message": "this is a fake msg7",
+          "messageBy": "client"
+        },
+        {
+          "date": "20-10-10",
+          "message": "ok",
+          "messageBy": "operator"
+        },
+        {
+          "date": "20-10-10",
+          "message": "will be done",
+          "messageBy": "client"
+        }
+      ]
     },
     {
       "id": 8,
       "subject": "Issue with ssl certificate",
       "status": "Client response pending",
-      "addedAt": "2020-09-23"
+      "addedAt": "2020-09-23",
+      "history": [
+        {
+          "date": "20-10-10",
+          "message": "this is a fake msg8",
+          "messageBy": "client"
+        },
+        {
+          "date": "20-10-10",
+          "message": "ok",
+          "messageBy": "operator"
+        },
+        {
+          "date": "20-10-10",
+          "message": "will be done",
+          "messageBy": "client"
+        }
+      ]
     },
     {
       "id": 9,
       "subject": "Issue with ssl certificate",
       "status": "Client response pending",
       "addedAt": "2020-09-23"
+      
     },
     {
       "id": 10,
       "subject": "Issue with ssl certificate",
       "status": "Client response pending",
-      "addedAt": "2020-09-23"
+      "addedAt": "2020-09-23",
+      "history": [
+        {
+          "date": "20-10-10",
+          "message": "this is a fake msg10",
+          "messageBy": "client"
+        },
+        {
+          "date": "20-10-10",
+          "message": "ok",
+          "messageBy": "operator"
+        },
+        {
+          "date": "20-10-10",
+          "message": "will be done",
+          "messageBy": "client"
+        }
+      ]
     }
 ]

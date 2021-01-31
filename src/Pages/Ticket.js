@@ -4,26 +4,33 @@ import { PageBreadcrumb } from '../Components/PageBreadcrumb'
 import tickets from "../Assets/data/dummy-tickets.json"
 import {Messagehistory} from "../Components/messagehistory/Messagehistory.js"
 import {Updateticket} from "../Components/Updateticket.js"
-
+import { useParams } from "react-router-dom";
 
 export const Ticket = () => {
 const [message,setmessage] = useState("")
+const [tick,settick] = useState(tickets[0])
+const {tId} = useParams()
 
 const handleonsubmit=()=>{
     alert("submitted")
 }
 
-    const handlechange=(e)=>{
+const handlechange=(e)=>{
             const{value}=e.target
             setmessage(value)
-            console.log(message)
     }
 
-    useEffect(() => {
-        
-    }, [message])
+useEffect(() => {
+      
+       for(let i=0;i < tickets.length;i++){
+           if(tickets[i].id == tId){
+               settick(tickets[i])
+           }
+       }
+      
+},[] )
 
-    let tick=tickets[0]
+    // let tick=tickets[0]
     return (
         <Container>
             <Row>
@@ -32,6 +39,7 @@ const handleonsubmit=()=>{
                   </Col>
             </Row>
             <Row>
+                
                 <Col className="font-weight-bold">
                  <div className="subject">Subject:{tick.subject}</div>
                  <div className="date">Date:{tick.addedAt}</div>
@@ -44,7 +52,8 @@ const handleonsubmit=()=>{
             </Row>
             <Row className="mt-4">
                 <Col>
-                <Messagehistory msg={tick.history}/>
+                {tick.history &&  <Messagehistory msg={tick.history} />}
+               
                 </Col>
             </Row>
             < hr/>

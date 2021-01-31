@@ -3,6 +3,7 @@ import {Container , Row, Col, Button, Breadcrumb} from "react-bootstrap"
 import { Tickettable } from '../../Components/Tickettable'
 import tickets from "../../Assets/data/dummy-tickets.json"
 import { PageBreadcrumb } from '../../Components/PageBreadcrumb'
+import { Link } from "react-router-dom";
 
 
 
@@ -16,7 +17,7 @@ export default function Dashboard() {
            </Row>
            <Row>
                <Col className="text-center">
-                <Button style={{'font-size':'2rem','padding':'10px 30px'}}>Add new Ticket</Button>
+               <Link to="/addticket"><Button style={{'font-size':'2rem','padding':'10px 30px'}}>Add new Ticket</Button></Link> 
                </Col>
                
            </Row>
