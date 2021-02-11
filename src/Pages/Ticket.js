@@ -23,7 +23,7 @@ const handlechange=(e)=>{
 useEffect(() => {
       
        for(let i=0;i < tickets.length;i++){
-           if(tickets[i].id == tId){
+           if(tickets[i].id === tId){
                settick(tickets[i])
            }
        }
@@ -41,7 +41,7 @@ useEffect(() => {
             <Row>
                 
                 <Col className="font-weight-bold">
-                 <div className="subject">Subject:{tick.subject}</div>
+                 <div className="subject">Subject:{ tick.subject}</div>
                  <div className="date">Date:{tick.addedAt}</div>
                  <div className="status">Status:{tick.status}</div>
                  </Col>

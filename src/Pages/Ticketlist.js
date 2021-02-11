@@ -5,33 +5,21 @@ import {SearchForm} from "../Components/SearchForm"
  import {Tickettable} from "../Components/Tickettable"
  import tickets from "../Assets/data/dummy-tickets.json"
  import { Link } from "react-router-dom";
-
+import {useDispatch } from "react-redux"
+import {fetchalltickets} from "../Pages/ticketaction"
 
 export default function Ticketlist() {
+    const dispatch =useDispatch()
     const [searchbarval, setsearchbarval] = useState("")
-    const [disptickets, setdisptickets] = useState(tickets)
-
-// useEffect(() => {
-      
-//     }, [searchbarval,disptickets])
 
 
-const handlechange=(e)=>{
-        const {value}=e.target
-        setsearchbarval(value) 
-        searchTicket(value)
-        
-        }
-const searchTicket=(sttr)=>{
-const displaytickets=tickets.filter((item)=>{
-   
-               return  item.subject.toLowerCase().includes(sttr.toLowerCase())
-                
-            })
-            console.log("displayt:",displaytickets)
-            setdisptickets(displaytickets)
+useEffect(() => {
+      dispatch(fetchalltickets())
+    }, [searchbarval,dispatch])
 
-        }
+
+
+
 
      return (
         <Container>
@@ -46,13 +34,13 @@ const displaytickets=tickets.filter((item)=>{
                 <Link to="/addticket" ><Button>Add new ticket</Button></Link>
                 </Col>
                 <Col className="text-right">
-                    <SearchForm handlechange={handlechange} searchbarval={searchbarval}  />
+                    <SearchForm searchbarval={searchbarval}  />
                  </Col>
             </Row>
             <hr />
             <Row>
                 <Col>
-                <Tickettable tickets={disptickets} />
+                <Tickettable />
                 </Col>
             </Row>
         </Container>
